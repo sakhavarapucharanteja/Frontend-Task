@@ -1,0 +1,27 @@
+
+          .name{
+                font-weight: bold;
+            }
+            .power{
+                font-weight: bold;
+            }
+            .link{
+                font-weight: bold;
+            }
+            .container{
+                width: 270px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: black;
+                background-color: aqua;
+                padding: 10px 2px 20px 20px;
+                
+            
+            }
+
+            body{
+                margin: 180px 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;;
+            }
