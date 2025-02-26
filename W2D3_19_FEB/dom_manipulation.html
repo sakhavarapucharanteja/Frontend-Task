@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Dom in js</title></head>
+    <body>
+        <script type="text/javascript">
+            function button()
+            {
+                document.getElementById("h1").innerHTML="This is charan sak";
+               alert("Hey Buddy! What's Up");
+            }
+
+        </script>
+
+        <style>
+            .button{
+                background-color: brown;
+                color: white;
+                cursor: pointer;
+                border: none;
+                padding-left:30px ;
+                padding-right:30px;
+                padding-top:1cqmin;
+                padding-bottom:10px;
+            }
+
+            .button:hover{
+                background-color: rgb(233, 47, 47);
+            }
+        </style>
+
+        <button class="button" onclick="button()">Click Me</button>
+        <h1 id="h1">Hey Buddy!</h1>
+    </body>
+</html>

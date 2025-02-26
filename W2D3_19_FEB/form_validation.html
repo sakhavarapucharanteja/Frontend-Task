@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .username{
+                margin-bottom: 10px;
+                padding: 5px 10px 5px 5px;
+            }
+
+            .password{
+                margin-bottom: 10px;
+                padding: 5px 10px 5px 5px;
+            }
+            .submit{
+                padding: 5px 10px 5px 10px;
+            }
+            
+
+        </style>
+
+        <script type="text/javascript">
+            function button(){
+                let username=document.getElementById("user").value;
+                let password=document.getElementById("pass").value;
+                if(username.trim()==""||password.trim()==""){
+                    alert("Please Enter Username and Password");
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return button()" action="welcome_page.html">
+            <input id="user" class="username" type="text" placeholder="Username:"><br>
+            <input id="pass" class="password" type="password" placeholder="password:"><br>
+            <button class="submit">Submit</button>
+        </form>    
+    </body>
+</html>

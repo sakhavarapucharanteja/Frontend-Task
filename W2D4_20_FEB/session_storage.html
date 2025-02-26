@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SessionStorage Example</title>
+
+        <script>
+
+            function saveEmail() {
+                var email = document.getElementById("email").value;
+                if (email) {
+                    sessionStorage.setItem("userEmail", email);
+                    alert("Email saved!");
+                }
+                else {
+                    alert("Please enter an email.");
+                }
+            }
+
+
+            function getEmail() {
+                var savedEmail = sessionStorage.getItem("userEmail");
+                if (savedEmail) {
+                    document.getElementById("output").innerText = "Saved Email: " + savedEmail;
+                } 
+                else {
+                    document.getElementById("output").innerText = "No email saved in this session.";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Session Storage</h1>
+
+        <input type="text" id="email" placeholder="Enter your email">
+        <button onclick="saveEmail()">Save Email</button>
+        <button onclick="getEmail()">Get Saved Email</button>
+        <p id="output"></p>
+    </body>
+</html>

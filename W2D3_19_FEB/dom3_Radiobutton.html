@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function submit(){
+                let r1=document.getElementById("r1");
+                let r2=document.getElementById("r2");
+
+                if(r1.checked==true){
+                    alert("The Name selected is:"+" "+r1.value);
+                }
+                else if(r2.checked==true){
+                    alert("The Name selected is:"+" "+r2.value);
+                }
+                else{
+                    alert("Nothing got selected");
+                }
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <style>
+            .input2{
+                margin-bottom: 10px;
+            }
+            .b1{
+                display: block;
+                padding: 5px 10px 5px 10px;
+                background-color: rgb(52, 52, 231);
+                border: none;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+            }
+            .b1:hover{
+                background-color: rgb(83, 83, 248);
+            }
+        </style>
+
+        <input class="input1" name="rd1" id="r1" type="radio" value="Charan">Charan</input><br>
+        <input class="input2" name="rd1" id="r2" type="radio" value="Teja">Teja</input><br>
+        <button class="b1" onclick="submit()">Submit</button>
+    </body>
+</html>

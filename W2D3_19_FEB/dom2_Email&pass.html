@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript">
+            function submit()
+            {
+                let text= document.getElementById("n1").value;
+                let pass=document.getElementById("password").value;
+                if(text==pass){
+                    alert("Entered Name and Password are SAME")
+                }
+                else{
+                    alert("Entered Name and password are NOT SAME")
+                }
+    
+            }
+
+        </script>
+
+        <style>
+            .name{
+                display: block;
+                margin-bottom: 10px;
+                padding: 10px 10px 10px 10px;
+            }
+            .pass{
+                display: block;
+                margin-bottom: 10px;
+                padding: 10px 10px 10px 10px;
+            }
+            .submit{
+                display: block;
+                padding: 5px 10px 5px 10px;
+                background-color: rgb(52, 52, 231);
+                border: none;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+            }
+            .submit:hover{
+                background-color: rgb(83, 83, 248);
+            }
+
+        </style>
+        
+          <input class="name" id="n1" type="text" placeholder="Enter name:" required>
+          <input class="pass" id="password" type="password" placeholder="Password:" required>
+          <button class="submit" onclick="submit()">Submit</button>
+        
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LocalStorage</title>
+        <script>
+            function saveUsername() {
+                var username = document.getElementById("username").value;
+                if (username) {
+                    localStorage.setItem("username", username);
+                    alert("Username saved");
+                } 
+                else {
+                    alert("Please enter a username");
+                }
+            }
+
+
+            function getUsername() {
+                var savedUsername = localStorage.getItem("username");
+                if (savedUsername) {
+                    document.getElementById("output").innerText = "Saved Username: " + savedUsername;
+                } 
+                else {
+                    document.getElementById("output").innerText = "No username saved";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Local Storage</h1>
+
+        <input type="text" id="username" placeholder="Enter username">
+        <button onclick="saveUsername()">Save Username</button>
+        <button onclick="getUsername()">Get Saved Username</button>
+        <p id="output"></p>
+    </body>
+</html>
